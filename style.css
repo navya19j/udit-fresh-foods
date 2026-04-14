@@ -37,6 +37,7 @@ body {
   overflow-x:hidden;
   background-image: radial-gradient(circle, #c8dfc9 1px, transparent 1px);
   background-size: 28px 28px;
+  padding-bottom: 76px;
 }
 img { max-width:100%; display:block; }
 a { text-decoration:none; color:inherit; }
@@ -382,7 +383,7 @@ section { padding:100px 0; }
    MOBILE STICKY CTA BAR
 ════════════════════════════════ */
 .mobile-cta-bar {
-  display: none;
+  display: flex;
   position: fixed;
   bottom: 0; left: 0; right: 0;
   z-index: 999;
@@ -392,9 +393,11 @@ section { padding:100px 0; }
   border-top: 1px solid #e8ede9;
   box-shadow: 0 -4px 24px rgba(0,0,0,0.1);
   gap: 10px;
+  justify-content: center;
 }
 .mobile-cta-btn {
   flex: 1;
+  max-width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -440,10 +443,6 @@ section { padding:100px 0; }
 
 /* ── Mobile landscape / large phone (≤768px) ── */
 @media (max-width:768px) {
-  /* Show sticky bar */
-  .mobile-cta-bar { display:flex; }
-  body { padding-bottom: 76px; }
-
   /* Globals */
   section { padding:44px 0; }
   .section-header { margin-bottom:28px; }
