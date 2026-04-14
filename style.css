@@ -371,7 +371,8 @@ section { padding:100px 0; }
 .footer-links li a,.footer-contact li a { font-size:0.88rem; color:rgba(255,255,255,0.6); transition:var(--transition); display:flex; align-items:center; gap:8px; }
 .footer-links li a:hover,.footer-contact li a:hover { color:var(--amber); transform:translateX(4px); }
 .footer-services li { font-size:0.88rem; color:rgba(255,255,255,0.6); }
-.footer-contact li a i { font-size:0.8rem; color:var(--green-mid); }
+.footer-contact li { font-size:0.88rem; color:rgba(255,255,255,0.6); display:flex; align-items:center; gap:8px; }
+.footer-contact li a i, .footer-contact li > i { font-size:0.8rem; color:var(--green-mid); flex-shrink:0; }
 .footer-bottom { border-top:1px solid rgba(255,255,255,0.08); padding-top:28px; display:flex; align-items:center; justify-content:space-between; font-size:0.82rem; color:rgba(255,255,255,0.4); }
 .footer-love span { color:#e85252; }
 
