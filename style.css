@@ -379,6 +379,46 @@ section { padding:100px 0; }
 .footer-love span { color:#e85252; }
 
 /* ════════════════════════════════
+   MOBILE STICKY CTA BAR
+════════════════════════════════ */
+.mobile-cta-bar {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 999;
+  padding: 10px 16px;
+  padding-bottom: calc(10px + env(safe-area-inset-bottom));
+  background: #ffffff;
+  border-top: 1px solid #e8ede9;
+  box-shadow: 0 -4px 24px rgba(0,0,0,0.1);
+  gap: 10px;
+}
+.mobile-cta-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 16px;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+}
+.mobile-cta-whatsapp {
+  background: #25D366;
+  color: #ffffff;
+}
+.mobile-cta-whatsapp:hover { background: #1ebe5d; }
+.mobile-cta-call {
+  background: var(--green-dark);
+  color: #ffffff;
+}
+.mobile-cta-call:hover { background: var(--green); }
+
+/* ════════════════════════════════
    RESPONSIVE
 ════════════════════════════════ */
 
@@ -400,6 +440,10 @@ section { padding:100px 0; }
 
 /* ── Mobile landscape / large phone (≤768px) ── */
 @media (max-width:768px) {
+  /* Show sticky bar */
+  .mobile-cta-bar { display:flex; }
+  body { padding-bottom: 76px; }
+
   /* Globals */
   section { padding:44px 0; }
   .section-header { margin-bottom:28px; }
