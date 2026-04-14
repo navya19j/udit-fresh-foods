@@ -480,6 +480,8 @@ section { padding:100px 0; }
   /* About */
   .about-highlights { gap:10px; }
   .about-body-text { display:none; }
+  .about-content { order:1; }
+  .about-visual { order:2; }
   .founder-photo-wrap { max-width:100%; margin:0 auto; display:flex; flex-direction:column; }
   .founder-photo { height:320px; border-radius:var(--radius-lg) var(--radius-lg) 0 0; box-shadow:none; }
   .founder-caption { position:static; border-radius:0 0 var(--radius-lg) var(--radius-lg); left:auto; right:auto; bottom:auto; padding:14px 18px; box-shadow:var(--shadow-sm); }
